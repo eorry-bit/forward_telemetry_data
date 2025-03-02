@@ -1,0 +1,41 @@
+jwt_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzeW5jQGludGVhZ2xlLmNvbSIsInVzZXJJZCI6Ijg0MTU3NTEwLWY3MzktMTFlZi1iNDI3LTBiN2U0ZGViNjRhYSIsInNjb3BlcyI6WyJURU5BTlRfQURNSU4iXSwic2Vzc2lvbklkIjoiOTFmYWMyMDgtYmU4Zi00NWY5LTkyMTMtNWMyYzQzYzE4ZDYxIiwiaXNzIjoid3lhcHAuaW50ZWFnbGUuY29tIiwiaWF0IjoxNzQwOTAxMzM3LCJleHAiOjE3NDA5ODc3MzcsImVuYWJsZWQiOnRydWUsImlzUHVibGljIjpmYWxzZSwidGVuYW50SWQiOiJmNTVjZmI4MC05YWMxLTExZWMtODIwMS02ZGE0ODU5ODVmYjYiLCJjdXN0b21lcklkIjoiMTM4MTQwMDAtMWRkMi0xMWIyLTgwODAtODA4MDgwODA4MDgwIn0.zLrpCPKUQ3mvpeGZzeobV2X62sTjfb1AVKi8Ogggg5lfFpOWuZTdm8VQIJ4kGLw7j3T9VpinhFJC4qCqyn7SRw"
+http_server= "https://wyapp.inteagle.com"
+
+
+[database]
+host = "120.77.180.48"
+user = "tb_view"
+dbname="thingsboard_prod"
+password= "DBTBUser.Viewer"
+
+[[sync_tasks]]
+source_target = "N2-center-03"
+dest_target = "T01"
+interval_secs = 10
+
+[[sync_tasks]]
+source_target = "N2-center-04"
+dest_target = "T02"
+interval_secs = 10
+
+[[sync_tasks]]
+source_target = "N2-center-05"
+dest_target = "T03"
+interval_secs = 10
+
+
+[[sync_tasks]]
+source_target = "N4-center-03"
+dest_target = "T04"
+interval_secs = 10
+
+[[sync_tasks]]
+source_target = "N4-center-04"
+dest_target = "T05"
+interval_secs = 10
+
+
+[[sync_tasks]]
+source_target = "N4-center-05"
+dest_target = "T06"
+interval_secs = 10

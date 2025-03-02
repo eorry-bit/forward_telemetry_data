@@ -1,0 +1,16 @@
+[Unit]
+Description=Forward Data Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/forward_data
+ExecStart=/opt/forward_data/forward_data
+Restart=always
+RestartSec=10
+
+# 确保日志目录存在
+ExecStartPre=/bin/mkdir -p /opt/forward_data/log
+
+[Install]
+WantedBy=multi-user.target
